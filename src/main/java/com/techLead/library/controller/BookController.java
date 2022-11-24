@@ -31,7 +31,7 @@ import com.techLead.library.service.LibraryServiceImpl;
 
 @RestController
 @RequestMapping("/books")
-@CrossOrigin (origins = "http://localhost:4200", allowedHeaders = "*")
+
 public class BookController {
 
 	@Autowired
@@ -42,7 +42,7 @@ public class BookController {
 
 	@Autowired
 	LibraryRolesRepository rolesRepository;
-	@CrossOrigin (origins = "http://localhost:4200", allowedHeaders = "*")
+	
 	@PostMapping("/register-book/{id}")
 	public ResponseEntity<Book> createBook(@RequestBody @Valid BookDto book, @PathVariable Long id) {
 		Book newBook = new Book();
@@ -55,7 +55,7 @@ public class BookController {
 	}
 	
 
-	@CrossOrigin (origins = "http://localhost:4200", allowedHeaders = "*")
+	
 	@GetMapping("/all-books")
 	public ResponseEntity<List<Book>> allBooks() {
 		return ResponseEntity.status(HttpStatus.OK).body(bookServiceImpl.findAll());

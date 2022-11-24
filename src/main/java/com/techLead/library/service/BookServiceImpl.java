@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.techLead.library.model.Book;
-import com.techLead.library.model.LibraryUser;
+
 import com.techLead.library.repositories.BooksRepository;
 import com.techLead.library.repositories.LibraryRolesRepository;
 
@@ -47,20 +47,5 @@ public class BookServiceImpl implements IBooks {
 	}
 
 	
-	
-	public boolean verifyRoleUser(LibraryUser user) {
-	
-		
-		return false; 
-	} 
-	
-	
-	
-	public boolean checkCreation(LibraryUser user, Book book) {
-		if(user.getId().equals(book.getCreatedBy().getId())){
-			return true;
-		} 
-		return false; 
-	} 
 
 }

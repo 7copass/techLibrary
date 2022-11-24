@@ -17,8 +17,8 @@ public class LibraryUserDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	//@NotBlank(message = "Name  is required")
-	//@Length(min = 3)
+	@NotBlank(message = "Name  is required")
+	@Length(min = 3)
 	private String name;
 	@NotBlank(message = "Email  is required")
 	private String email;
