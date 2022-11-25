@@ -18,7 +18,7 @@ Buscar Apenas um único livro
 Atualizar um livro
 Deletar um livro
 
-##Observação:
+## Observação:
 
 O tipo de usuário CLIENT, só tem permissão de deletar e atualizar livros que ele mesmo cadastrou,
 e o tipo ADMIN pode deletar e atualizar qualquer livro
